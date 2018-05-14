@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sample</string>
+    <string name="string_button_name_camera">Camera</string>
+    <string name="string_button_name_remove">Remove</string>
+</resources>
