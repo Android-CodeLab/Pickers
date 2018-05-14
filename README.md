@@ -20,7 +20,7 @@ The easiest way to add the Material DateTime Picker library to your project is b
 
 ```
 dependencies {
-        compile 'tk.jamun:pickers-0.0.1-beta'
+        compile 'in.jamun:pickers-0.0.1-beta'
 }
 ```
 
@@ -46,7 +46,7 @@ The easiest way to add the Material DateTime Picker library to your project is b
 
 ```
 dependencies {
-        compile 'tk.jamun:country-0.0.1-beta'
+        compile 'in.jamun:country-0.0.1-beta'
 }
 ```
 
@@ -70,7 +70,7 @@ The easiest way to add the Material DateTime Picker library to your project is b
 
 ```
 dependencies {
-        compile 'tk.jamun:language-0.0.1-beta'
+        compile 'in.jamun:language-0.0.1-beta'
 }
 ```
 
