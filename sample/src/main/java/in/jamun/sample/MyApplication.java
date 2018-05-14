@@ -1,4 +1,4 @@
-package tk.jamun.sample;
+package in.jamun.sample;
 
 import android.app.Application;
 import android.content.Context;

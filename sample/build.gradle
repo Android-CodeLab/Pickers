@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "tk.jamun.sample"
+        applicationId "in.jamun.sample"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -28,5 +28,5 @@ dependencies {
     implementation 'com.android.support:support-v13:27.1.1'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
-    implementation project(path: ':pickers')
+    implementation 'in.jamun:pickers:0.0.1-beta'
  }
