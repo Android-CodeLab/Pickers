@@ -28,11 +28,17 @@ These instructions will get you a copy of the project up and running on your loc
 The easiest way to add the all **Pickers** library to your project is by adding it as a dependency to your `build.gradle`
 
 ```
+Either
 repositories {
         jcenter()
 }
+Or
+repositories {
+        mavenCentral()
+}
+
 dependencies {
-        compile 'in.jamun:pickers:0.0.1-beta'
+        compile 'tk.jamun:pickers:0.0.1'
 }
 ```
 
@@ -57,11 +63,17 @@ These instructions will get you a copy of the project up and running on your loc
 The easiest way to add the Only **Country-Picker** library to your project is by adding it as a dependency to your `build.gradle`
 
 ```
+Either
 repositories {
         jcenter()
 }
+Or
+repositories {
+        mavenCentral()
+}
+
 dependencies {
-        compile 'in.jamun:country:0.0.1-beta'
+        compile 'tk.jamun:country:0.0.1'
 }
 ```
 
@@ -84,11 +96,17 @@ These instructions will get you a copy of the project up and running on your loc
 The easiest way to add the Only **Language-Picker** library to your project is by adding it as a dependency to your `build.gradle`
 
 ```
+Either
 repositories {
         jcenter()
 }
+Or
+repositories {
+        mavenCentral()
+}
+
 dependencies {
-        compile 'in.jamun:language:0.0.1-beta'
+        compile 'tk.jamun:language:0.0.1'
 }
 ```
 
