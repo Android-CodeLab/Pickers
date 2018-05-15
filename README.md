@@ -1,50 +1,66 @@
 # Jamun-Pickers
 
-Pickers Library provide you a set of Pickers like Country, Language, Share and Intent Chooser. 
+Pickers Library provide you a set of different Pickers like Country, Language, Share and Intent Chooser. 
 
-1. `Country Pickers` provide you Country picking functionality with great UI|UX, and there custom calling features to make there picker developer handy. This have four custom ways to make there picker UI with Single and Multi Selection functionality. It have updated collection of country name, code and there flags for better understanding and UI.
+1. `Country Pickers` allow you to access Country picking functionality with great UI/UX design, and there are numberous of function which help you to modify picker as per your requirements. Library has been provided with four custom UI initate mode you can decide how the view of picker can be initate. You can also decide weather picker inheriate Single or Multi Selection property. Library consists of updated collection of country name, code and there flags. We are using APIs base structure to avoid increase in the size of apk due to flag Images. This module Maintain the database so that you don't need to call APIs again and again rather than you can choose when to refresh the Database and fetch new real time data.
 
-2. `Language Picker` provide you Language picking functionality with great UI|UX, and there custom calling features to make there picker developer handy. This have four custom ways to make there picker UI with Single and Multi Selection functionality. User have option to customize there data at your own by simple calls.
+2. `Language Picker` provides you read-made Language picker  which is easy to use and comes with great UI/UX, and there are numberous of function which help you to modify picker as per your requirements. Library has been provided with four custom UI initate mode you can decide how the view of picker can be initate. You can also decide weather picker inheriate Single or Multi Selection property. You can allow edit the list of country name and language easily.
 
-3. `Intent Picker` provide you Complete Custom Intent Chooser with great UI|UX, and there custom calling features to make there picker developer handy.
+3. `Intent Picker` helps you to use Custom Intent Chooser with great UI/UX, and there are many of the feature for the customization of already embedded features. So that you can use it easily and gracefully.
 
-4. `Share Dialog Picker` provide you Intent Chooser with great UI|UX.
+4. `Share Dialog Picker` provide you Intent Chooser with great UI/UX. It automatically retrive the sort list of all the apps which can share the file. This functionality saves much of your task. You can also share dialog Picker for sending Large files. For this you just need to call a single function with file as Argument.
 
 ### What's New? (0.0.1)
-* Stable official Version for Developers and Live Apps.
-* Custom UI components with Single and Multi Selection Mode in Country and Language Pickers
-* Easy Calling mechanism with instal reply via Listeners
-* Lite version code with Api integration for Country Picker for Runtime improvement and Flags Images
-* Country and Language Pickers are in Four screen Bottom Sheet/Dialog/Activity/Navigation View
-* All view are Android device screen compatible upto tab 7' and 10' inches.
-* Intent, Share and Language Pickers are provide you more flexible way to customize data.
+* Stable official Version for Rapid Development.
+* Custom UI components with Single and Multi Selection Mode in Country and Language Pickers.
+* Easy Calling mechanism with instant reply via Listeners
+* Optimized code with Api integration for Country Picker for Flags Images
+* Country and Language Pickers have four modes you can optout from these Four mode (i.e. Bottom Sheet, Dialog, Activity, Navigation View)
+* All the views in the library are Screen compatible i.e. You can execute this library on different android screens including tabs.
 
-------
+### All-in-One Setup
 
-# Getting Started
+The easiest way to add **Pickers** library to your project is by adding it as a dependency to your `build.gradle`. To add picker library you just need to append few lines into your `build.gradle`.
+These lines are provided in Integration Part given Below
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+#### Gradle Setup
 
-## All-in-One Setup
+Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
 
-The easiest way to add **Pickers** library to your project is by adding it as a dependency to your `build.gradle`
-
-```
-Either
-repositories {
+```java
+allprojects {
+  repositories {
         jcenter()
+  }
 }
-Or
-repositories {
-        mavenCentral()
-}
+```
+Step 2\. Add the dependency
 
+```java
 dependencies {
         compile 'tk.jamun:pickers:0.0.1'
 }
 ```
+#### Maven
+```xml
+<dependency>
+  <groupId>tk.jamun</groupId>
+  <artifactId>pickers</artifactId>
+  <version>0.0.1</version>
+  <type>aar</type>
+</dependency>
+```
+------
+
+# Types of Pickers
 
 ## Utility Pickers
+
+It consist of Intent and Share dialog Picker. Both Modules are enough smart to Provide you enough feature to customize them as much as you want.
+
+`Intent Picker` helps you to use Custom Intent Chooser with great UI/UX, and there are many of the feature for the customization of already embedded features. So that you can use it easily and gracefully.
+
+`Share Dialog Picker` provide you Intent Chooser with great UI/UX. It automatically retrive the sort list of all the apps which can share the file. This functionality saves much of your task. You can also share dialog Picker for sending Large files. For this you just need to call a single function with file as Argument.
 
 **Portrait Mode Layout**
 
@@ -60,23 +76,34 @@ Intent Picker | Share Picker
 
 ## Country-Pickers
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+`Country Pickers` allow you to access Country picking functionality with great UI/UX design, and there are numberous of function which help you to modify picker as per your requirements. Library has been provided with four custom UI initate mode you can decide how the view of picker can be initate. You can also decide weather picker inheriate Single or Multi Selection property. Library consists of updated collection of country name, code and there flags.
 
-The easiest way to add the Only **Country-Picker** library to your project is by adding it as a dependency to your `build.gradle`
+#### Gradle Setup
 
-```
-Either
-repositories {
+Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
+
+```java
+allprojects {
+  repositories {
         jcenter()
+  }
 }
-Or
-repositories {
-        mavenCentral()
-}
+```
+Step 2\. Add the dependency
 
+```java
 dependencies {
         compile 'tk.jamun:country:0.0.1'
 }
+```
+#### Maven
+```xml
+<dependency>
+  <groupId>tk.jamun</groupId>
+  <artifactId>country</artifactId>
+  <version>0.0.1</version>
+  <type>aar</type>
+</dependency>
 ```
 
 **Portrait Mode Layout**
@@ -93,23 +120,34 @@ Activity View | Dialog View
 
 ## Language-Pickers
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+ `Language Picker` provides you read-made Language picker  which is easy to use and comes with great UI/UX, and there are numberous of function which help you to modify picker as per your requirements. Library has been provided with four custom UI initate mode you can decide how the view of picker can be initate. You can also decide weather picker inheriate Single or Multi Selection property. You can allow edit the list of country name and language easily.
 
-The easiest way to add the Only **Language-Picker** library to your project is by adding it as a dependency to your `build.gradle`
+#### Gradle Setup
 
-```
-Either
-repositories {
+Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
+
+```java
+allprojects {
+  repositories {
         jcenter()
+  }
 }
-Or
-repositories {
-        mavenCentral()
-}
+```
+Step 2\. Add the dependency
 
+```java
 dependencies {
         compile 'tk.jamun:language:0.0.1'
 }
+```
+#### Maven
+```xml
+<dependency>
+  <groupId>tk.jamun</groupId>
+  <artifactId>language</artifactId>
+  <version>0.0.1</version>
+  <type>aar</type>
+</dependency>
 ```
 
 **Portrait Mode Layout**
@@ -131,6 +169,8 @@ Country-Picker | Language Picker
 ------
 
 # How to Implement
+
+Once the project has been added to gradle, You can use these lines of code to configure pickers....
 
 ## 1. Share Picker
 
@@ -174,18 +214,22 @@ intentPicker.clear();
 
 ### 1. Bottom Sheet View
 
+This implement your picker as an Bottom Sheet view.
+
 **1. Define Class Object**
 ```
 PickerCountryBottom pickerCountryBottom = new PickerCountryBottom().setThings(this)
                 .bindListener(new PickerListenerCountry() {
                     @Override
-                    public void singleModeData(ModelDialog modelLanguage) {
-                        super.singleModeData(modelLanguage);
-                    }
+            public void singleModeData(ModelDialog modelDialog) {
+                super.singleModeData(modelDialog);
+                       //Return single selection mode data as an model
+            }
 
-                    @Override
-                    public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
-                        super.multiModeData(languageArrayList);
+            @Override
+            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+                super.multiModeData(countryArrayList);
+                //Return Multi selection mode data as an arraylist.
                     }
 
                     @Override
@@ -205,6 +249,8 @@ pickerCountryBottom.clear();
 
 ### 2. Navigation View
 
+This implement your picker as an Navigation Drawer view.
+
 **1. Define Class Object with Toolbar and DrawerLayout Object**
 ```
  PickerCountryNavigation navLeftFragment = (PickerCountryNavigation)
@@ -213,13 +259,15 @@ pickerCountryBottom.clear();
         navLeftFragment.setTags(initializeDataCountryTags());
         navLeftFragment.setUpDrawer(drawerLayout, toolbar, false, new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelLanguage) {
-                super.singleModeData(modelLanguage);
+            public void singleModeData(ModelDialog modelDialog) {
+                super.singleModeData(modelDialog);
+                       //Return single selection mode data as an model
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
-                super.multiModeData(languageArrayList);
+            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+                super.multiModeData(countryArrayList);
+                //Return Multi selection mode data as an arraylist.
             }
 
             @Override
@@ -250,17 +298,21 @@ if (drawerLayout.isDrawerOpen(GravityCompat.END)) {
 ```
 ### 3. Dialog View
 
+This implement your picker as an Dialog view.
+
 **1. Define Class Object**
 ```
 PickerCountryDialog  pickerCountryDialog = new PickerCountryDialog(this).bindListener(new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelLanguage) {
-                super.singleModeData(modelLanguage);
+            public void singleModeData(ModelDialog modelDialog) {
+                super.singleModeData(modelDialog);
+                       //Return single selection mode data as an model
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
-                super.multiModeData(languageArrayList);
+            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+                super.multiModeData(countryArrayList);
+                //Return Multi selection mode data as an arraylist.
             }
 
             @Override
@@ -279,17 +331,21 @@ pickerCountryDialog.clear();
 ```
 ### 4. Activity View
 
+This implement your picker as an Activity view.
+
 **1. Start Activity**
 ```
 PickerCountryActivity.setThings(this, new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelLanguage) {
-                super.singleModeData(modelLanguage);
+            public void singleModeData(ModelDialog modelDialog) {
+                super.singleModeData(modelDialog);
+                       //Return single selection mode data as an model
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
-                super.multiModeData(languageArrayList);
+            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+                super.multiModeData(countryArrayList);
+                //Return Multi selection mode data as an arraylist.
             }
 
             @Override
@@ -298,9 +354,12 @@ PickerCountryActivity.setThings(this, new PickerListenerCountry() {
             }
         }, initializeDataCountryTags(), false);
 ```
-### 5. Utility Methods
+### 5. Additional Options
 
 **1. Customize Api tags and Urls**
+
+You can also customize APIs urls and tags as per your need for Country Picker. We are using APIs base structure to avoid increase in the size of apk due to flag Images..
+
 ```
  private ModelCountryDetails initializeDataCountryTags() {
         ModelCountryDetails modelCountryDetails = new ModelCountryDetails();
@@ -314,10 +373,17 @@ PickerCountryActivity.setThings(this, new PickerListenerCountry() {
     }
 ```
 **2. Refresh Databse**
+
+You can use this function refreshDatabase(). i.e. that you can call api again to fetch real time data into your app. This module Maintain the database so that you don't need to call APIs again and again rather than you can choose when to refresh the Database and fetch new real time data.
+
 ```
 object.refreshDatabase();
 ```
+
+You can retrive all the data assosiated to Object if you now any of the parameter Name,Code and ISO.
+
 **3. Find Data Model with Country Name**
+
 ```
 object.findByName(countryName);
 ```
@@ -330,6 +396,9 @@ object.findByCode((int)countryCode);
 object.findByCode(iso);
 ```
 **6. Start Multi Selection (Dialog/Bottom/Navigation)**
+
+This function call provide you an opportunity to make your picker Multi or Single Selector.
+
 ```
 object..setSelectionModeMulti(true);
 ```
@@ -340,6 +409,8 @@ object..setSelectionModeMulti(true);
 
 ### 1. Bottom Sheet View
 
+This implement your picker as an Bottom Sheet view.
+
 **1. Define Class Object**
 ```
 PickerLanguageBottom  pickerLanguageBottom = new PickerLanguageBottom().setThings(this, initializeData())
@@ -347,11 +418,13 @@ PickerLanguageBottom  pickerLanguageBottom = new PickerLanguageBottom().setThing
                     @Override
                     public void singleModeData(ModelLanguage modelLanguage) {
                         super.singleModeData(modelLanguage);
-                    }
+                       //Return single selection mode data as an model
+            }
 
-                    @Override
-                    public void multiModeData(ArrayList<ModelLanguage> languageArrayList) {
-                        super.multiModeData(languageArrayList);
+            @Override
+            public void multiModeData(ArrayList<ModelLanguage> languageArrayList) {
+                super.multiModeData(languageArrayList);
+                //Return Multi selection mode data as an arraylist.
                     }
                 });
         pickerLanguageBottom.setSelectionModeMulti(false);
@@ -367,6 +440,8 @@ pickerLanguageBottom.clear();
 
 ### 2. Navigation View
 
+This implement your picker as an Navigation Drawer View.
+
 **1. Define Class Object with Toolbar and DrawerLayout Object**
 ```
   PickerLanguageNavigation navLeftFragment = (PickerLanguageNavigation)
@@ -376,11 +451,13 @@ pickerLanguageBottom.clear();
             @Override
             public void singleModeData(ModelLanguage modelLanguage) {
                 super.singleModeData(modelLanguage);
+                       //Return single selection mode data as an model
             }
 
             @Override
             public void multiModeData(ArrayList<ModelLanguage> languageArrayList) {
                 super.multiModeData(languageArrayList);
+                //Return Multi selection mode data as an arraylist.
             }
         }, LANG_MODE_NORMAL, GravityCompat.START);
 ```
@@ -407,6 +484,8 @@ drawerLayout.closeDrawer(GravityCompat.END);
 ```
 ### 3. Dialog View
 
+This implement your picker as an Dialog.
+
 **1. Define Class Object**
 ```
 PickerLanguageDialog pickerLanguageDialog = new PickerLanguageDialog(this).setData(initializeData()).
@@ -414,16 +493,17 @@ PickerLanguageDialog pickerLanguageDialog = new PickerLanguageDialog(this).setDa
                     @Override
                     public void singleModeData(ModelLanguage modelLanguage) {
                         super.singleModeData(modelLanguage);
-                    }
+                       //Return single selection mode data as an model
+            }
 
-
-                    @Override
-                    public void multiModeData(ArrayList<ModelLanguage> languageArrayList) {
-                        super.multiModeData(languageArrayList);
+            @Override
+            public void multiModeData(ArrayList<ModelLanguage> languageArrayList) {
+                super.multiModeData(languageArrayList);
+                //Return Multi selection mode data as an arraylist.
                     }
                 }).setSelectionModeMulti(false).createSetUp();
 ```
-**2. Call on Click**
+**2. Call onClick**
 ```
  pickerLanguageDialog.show();
 ```
@@ -433,23 +513,30 @@ pickerLanguageDialog.clear();
 ```
 ### 4. Activity View
 
-**1. Start Activity**
+This implement your picker as an Activity.
+
+**Start Activity**
 ```
  PickerLanguageActivity.setThings(this, new PickerListenerLanguage() {
             @Override
             public void singleModeData(ModelLanguage modelLanguage) {
                 super.singleModeData(modelLanguage);
+                //Return single selection mode data as an model
             }
 
             @Override
             public void multiModeData(ArrayList<ModelLanguage> languageArrayList) {
                 super.multiModeData(languageArrayList);
+                //Return Multi selection mode data as an arraylist.
             }
         }, initializeData(), LANG_MODE_NORMAL, false);
 ```
-### 5. Utility Methods
+### 5. Additional Options
 
-**1. Customize Api tags and Urls**
+**1. Customize Data**
+
+You can send data in the form of array list to customize data of Language Picker.
+The sample given below display a Perfect example how to add more data into language picker.
 ```
   public ArrayList<ModelLanguageParent> initializeData() {
         ArrayList<ModelLanguageParent> arrayList = new ArrayList<>();
@@ -476,11 +563,30 @@ pickerLanguageDialog.clear();
     }
 ```
 **2. Start Multi Selection (Dialog/Bottom/Navigation)**
+
+This function call provide you an opportunity to make your picker Multi or Single Selector.
 ```
 object..setSelectionModeMulti(true);
 ```
 
+> **To understand more how the library works, please take a look at the sample app.**
+
 ------
+
+# Why this library?
+
+* This library Pickers competible with all screen sizes and device (Tab with 7' inches and 10'inches).
+* Library support both orientation that is portrait and landscape.
+* It uses DatePickerDialog & TimePickerDialog internally.
+* Its simple and easy to use.
+* Its Customizable (Support Custom Themes). 
+* Minimum API is 15, but it'll probably work in API 9 and above, just make sure you test it out (we use `Support Fragment Manager`).  
+
+
+# Dependency
+
+* Android Support Fragment Library ``v27.1.1``
+* Jamun Volley Library **[Volley](https://github.com/Lib-Jamun/Volley.git)**
 
 ## Credits
 
@@ -490,24 +596,33 @@ Content Writer : **[Achal Garg](http://achal.techcruzers.com)**
 
 Company : **[Techcruzers](http://www.techcruzers.com)**
 
+# Live Project using this Library
+
+The following apps are using this library without facing any kind of Bugs.
+
+* **[SimplyBlood](https://play.google.com/store/apps/details?id=com.simplyblood)**
+* **[ZINI](https://play.google.com/store/apps/details?id=ai.zini)**
+* **[SaveBloodIndia](https://play.google.com/store/apps/details?id=com.savebloodindia)**
+* **[Rectangle India](https://play.google.com/store/apps/details?id=com.rectangleindia.blooddonation)**
+* **[Jeevan Rakshak](https://play.google.com/store/apps/details?id=com.jeevanrakshak)**
+
 ## More Library under Jamun 
 * **[Volley](https://github.com/Lib-Jamun/Volley.git)**
-Volley Library is a set of Custom Classes with UI components for network programming, integration and transaction handling in a better and standard way. This will help developers for making quality use of volley library. 
+Library is a set of Custom Classes with UI components for network programming, integration and transaction handling in a better and standard way. This will help developers for making quality use of volley library. 
 
-* **[Scanner](https://github.com/Lib-Jamun/scanner.git)**
-Scanner is a collection of Beautiful Activity which help others to make there own Custom QR/Barcode Scanner. 
+* **[Scanner](https://github.com/Lib-Jamun/scanner.git)** is a collection of Beautiful Activity which help others to make there own Custom QR/Barcode Scanner. 
 
 * **[Calendar](https://github.com/Lib-Jamun/calendar.git)**
-Calendar is a collection of Beautiful Activities which help others to make there Fully Custom Calendar View with Single and Multi Date Picker Functionality 
+is a collection of Beautiful Activities which help others to make there Fully Custom Calendar View with Single and Multi Date Picker Functionality 
 
 * **[Camera](https://github.com/Lib-Jamun/ui.git)**
-Camera library provide you Custom Complete Camera view with full features like Flash, Rotation, Gallery Picker, Focus, Tap to capture, Confirmation window and last but not least croping feature. It also provide you file path in return so that developer can feel a friendly handy way to Deal After. 
+library provide you Custom Complete Camera view with full features like Flash, Rotation, Gallery Picker, Focus, Tap to capture, Confirmation window and last but not least croping feature. It also provide you file path in return so that developer can feel a friendly handy way to Deal After. 
 
 * **[Gallery](https://github.com/Lib-Jamun/ui.git)**
-Gallery have some Beautiful UI Components and Multi files Mode for android Developers to give there app a A Rich look With single and Multi picker Functionality.
+have some Beautiful UI Components and Multi files Mode for android Developers to give there app a A Rich look With single and Multi picker Functionality.
 
 * **[UI](https://github.com/Lib-Jamun/ui.git)**
-UI library is a set of UI Views, Custom Component and Collection of Helper Classes which help Developer for making quality Product. Such as Camera, Gallery, Number of Pickers, Calendar, Date Pickers, Dialogs and many more Heler UI and Backend Component.
+library is a set of UI Views, Custom Component and Collection of Helper Classes which help Developer for making quality Product. Such as Camera, Gallery, Number of Pickers, Calendar, Date Pickers, Dialogs and many more Heler UI and Backend Component.
 
 ## License
     Copyright (c) 2015 Wouter Dullaert
