@@ -10,11 +10,7 @@ Pickers Library provide you a set of Pickers like Country, Language, Share and I
 
 4. `Share Dialog Picker` provide you Intent Chooser with great UI|UX.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-## What's New? (0.0.1)
+### What's New? (0.0.1)
 * Stable official Version for Developers and Live Apps.
 * Custom UI components with Single and Multi Selection Mode in Country and Language Pickers
 * Easy Calling mechanism with instal reply via Listeners
@@ -23,9 +19,15 @@ These instructions will get you a copy of the project up and running on your loc
 * All view are Android device screen compatible upto tab 7' and 10' inches.
 * Intent, Share and Language Pickers are provide you more flexible way to customize data.
 
+------
+
+# Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 ## All-in-One Setup
 
-The easiest way to add the all **Pickers** library to your project is by adding it as a dependency to your `build.gradle`
+The easiest way to add **Pickers** library to your project is by adding it as a dependency to your `build.gradle`
 
 ```
 Either
