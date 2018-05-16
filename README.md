@@ -280,7 +280,7 @@ This implement your picker as an Navigation Drawer view.
 <android.support.v4.widget.DrawerLayout>
  <fragment
         android:id="@+id/id_navigation"
-        android:name="in.jamun.pickers.views.country.PickerCountryNavigation"
+        android:name="tk.jamun.pickers.views.country.PickerCountryNavigation"
         android:layout_width="@dimen/dimen_nav_width"
         android:layout_height="match_parent"
         android:layout_gravity="end"
@@ -466,7 +466,7 @@ This implement your picker as an Navigation Drawer View.
 <android.support.v4.widget.DrawerLayout>
   <fragment
         android:id="@+id/id_navigation_language"
-        android:name="in.jamun.pickers.views.language.PickerLanguageNavigation"
+        android:name="tk.jamun.pickers.views.language.PickerLanguageNavigation"
         android:layout_width="@dimen/dimen_nav_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
