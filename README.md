@@ -622,7 +622,7 @@ have some Beautiful UI Components and Multi files Mode for android Developers to
 library is a set of UI Views, Custom Component and Collection of Helper Classes which help Developer for making quality Product. Such as Camera, Gallery, Number of Pickers, Calendar, Date Pickers, Dialogs and many more Heler UI and Backend Component.
 
 ## License
-    Copyright (c) 2015 Wouter Dullaert
+    Copyright (c) 2018 Jatin Sahgal
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
