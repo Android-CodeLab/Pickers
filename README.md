@@ -581,10 +581,6 @@ object..setSelectionModeMulti(true);
 Desgin & Developed by : **[Jatin Sahgal](https://www.linkedin.com/in/jatinsahgal/)**
  (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](https://jatin.techcruzers.com)**) 
 
-Content Writer : **[Achal Garg](https://www.linkedin.com/in/techachal/)**
-
-Company : **[Techcruzers](http://www.techcruzers.com)**
-
 # Live Project using this Library
 
 The following apps are using this library without facing any kind of Bugs.
