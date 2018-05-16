@@ -62,6 +62,18 @@ It consist of Intent and Share dialog Picker. Both Modules are enough smart to P
 
 `Share Dialog Picker` provide you Intent Chooser with great UI/UX. It automatically retrive the sort list of all the apps which can share the file. This functionality saves much of your task. You can also share dialog Picker for sending Large files. For this you just need to call a single function with file as Argument.
 
+**Portrait Mode Layout**
+
+Intent Picker | Share Picker
+---- | ----
+![jamun_pickers_intent](https://user-images.githubusercontent.com/38988514/39989090-ab29beae-5786-11e8-9121-40c387032a1a.png) | ![jamun_pickers_share](https://user-images.githubusercontent.com/38988514/39989077-a83e147e-5786-11e8-9c08-3652393d1830.png)
+
+**Landscape Mode Layout**
+
+Intent Picker | Share Picker
+---- | ----
+![jamun_pickers_intent_landscape](https://user-images.githubusercontent.com/38988514/39989091-ab6f28ea-5786-11e8-9ba4-66745bd4b7cb.png) | ![jamun_pickers_share_landscape](https://user-images.githubusercontent.com/38988514/39989079-a87d1480-5786-11e8-816d-db3e8d2d0789.png)
+
 ## Country-Pickers
 
 `Country Pickers` allow you to access Country picking functionality with great UI/UX design, and there are numberous of function which help you to modify picker as per your requirements. Library has been provided with four custom UI initate mode you can decide how the view of picker can be initate. You can also decide weather picker inheriate Single or Multi Selection property. Library consists of updated collection of country name, code and there flags.
@@ -104,7 +116,7 @@ Bottom Sheet View | Navigation View
 
 Activity View | Dialog View
 ---- | ----
-![jamun_calendar_single](https://user-images.githubusercontent.com/38988514/40102554-733de262-5908-11e8-93da-140001e494a2.png) | ![jamun_calendar_single_custom_selection](https://user-images.githubusercontent.com/38988514/40102555-738ad6d0-5908-11e8-8072-f05cd2a9cffb.png)
+![jamun_pickers_country_activity](https://user-images.githubusercontent.com/38988514/39989082-a8fa7164-5786-11e8-8d01-7f4b27b9f112.png) | ![jamun_pickers_country_dialog](https://user-images.githubusercontent.com/38988514/39989084-aa14f27c-5786-11e8-8c26-07fb9ffa5c26.png)
 
 ## Language-Pickers
 
