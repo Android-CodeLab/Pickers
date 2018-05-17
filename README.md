@@ -617,10 +617,10 @@ Library is a set of Custom Classes with UI components for network programming, i
 * **[Calendar](https://github.com/Lib-Jamun/calendar.git)**
 is a collection of Beautiful Activities which help others to make there Fully Custom Calendar View with Single and Multi Date Picker Functionality 
 
-* **[Camera](https://github.com/Lib-Jamun/ui.git)**
+* **[Camera](https://github.com/Lib-Jamun/Camera.git)**
 library provide you Custom Complete Camera view with full features like Flash, Rotation, Gallery Picker, Focus, Tap to capture, Confirmation window and last but not least croping feature. It also provide you file path in return so that developer can feel a friendly handy way to Deal After. 
 
-* **[Gallery](https://github.com/Lib-Jamun/ui.git)**
+* **[Gallery](https://github.com/Lib-Jamun/Gallery.git)**
 have some Beautiful UI Components and Multi files Mode for android Developers to give there app a A Rich look With single and Multi picker Functionality.
 
 * **[UI](https://github.com/Lib-Jamun/ui.git)**
