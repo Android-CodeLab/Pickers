@@ -1,51 +1,52 @@
-package in.jamun.sample;
+package tk.jamun.sample;
 
+import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import tk.jamun.pickers.extras.PickerListenerCountry;
-import tk.jamun.pickers.extras.PickerListenerLanguage;
-import tk.jamun.pickers.models.ModelIntentPicker;
-import tk.jamun.pickers.models.ModelLanguage;
-import tk.jamun.pickers.models.ModelLanguageParent;
-import tk.jamun.pickers.views.intents.PickerIntent;
-import tk.jamun.pickers.views.intents.PickerShareFiles;
-import tk.jamun.pickers.views.language.PickerLanguageActivity;
-import tk.jamun.pickers.views.language.PickerLanguageBottom;
-import tk.jamun.pickers.views.language.PickerLanguageDialog;
-import tk.jamun.pickers.views.language.PickerLanguageNavigation;
-import tk.jamun.pickers.models.ModelCountryDetails;
-import tk.jamun.pickers.models.ModelDialog;
-import tk.jamun.pickers.views.country.PickerCountryActivity;
-import tk.jamun.pickers.views.country.PickerCountryBottom;
-import tk.jamun.pickers.views.country.PickerCountryDialog;
-import tk.jamun.pickers.views.country.PickerCountryNavigation;
+import tk.jamun.ui.pickers.extras.PickerListenerCountry;
+import tk.jamun.ui.pickers.extras.PickerListenerLanguage;
+import tk.jamun.ui.pickers.models.ModelCountryDetails;
+import tk.jamun.ui.pickers.models.ModelDialog;
+import tk.jamun.ui.pickers.models.ModelIntentPicker;
+import tk.jamun.ui.pickers.models.ModelLanguage;
+import tk.jamun.ui.pickers.models.ModelLanguageParent;
+import tk.jamun.ui.pickers.views.country.PickerCountryActivity;
+import tk.jamun.ui.pickers.views.country.PickerCountryBottom;
+import tk.jamun.ui.pickers.views.country.PickerCountryDialog;
+import tk.jamun.ui.pickers.views.country.PickerCountryNavigation;
+import tk.jamun.ui.pickers.views.intents.PickerIntent;
+import tk.jamun.ui.pickers.views.intents.PickerShareFiles;
+import tk.jamun.ui.pickers.views.language.PickerLanguageActivity;
+import tk.jamun.ui.pickers.views.language.PickerLanguageBottom;
+import tk.jamun.ui.pickers.views.language.PickerLanguageDialog;
+import tk.jamun.ui.pickers.views.language.PickerLanguageNavigation;
 
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_ARABIC;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_ASSAMESE;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_BENGALI;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_ENGLISH;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_GUJRATI;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_HINDI;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_KANNADA;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_MAITHALI;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_MALAYALAM;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_MARATHI;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_MODE_NORMAL;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_ODIA;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_PUNJABI;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_TAMIL;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_TELGU;
-import static tk.jamun.pickers.extras.InterfaceLanguageListener.LANG_URDU;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_ARABIC;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_ASSAMESE;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_BENGALI;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_ENGLISH;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_GUJRATI;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_HINDI;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_KANNADA;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_MAITHALI;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_MALAYALAM;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_MARATHI;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_MODE_NORMAL;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_ODIA;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_PUNJABI;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_TAMIL;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_TELGU;
+import static tk.jamun.ui.pickers.extras.InterfaceLanguageListener.LANG_URDU;
 
-public class MainActivity extends AppCompatActivity {
+
+public class ActivityPickers extends AppCompatActivity {
     private PickerCountryBottom pickerCountryBottom;
     private PickerLanguageBottom pickerLanguageBottom;
     private static final int ACTION_REQUEST_CAMERA = 111;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pickers);
         setToolbar();
         initializeShareIntent();
         initializeNavigationViewLanguage();
@@ -82,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
                     public void singleModeData(ModelLanguage modelLanguage) {
                         super.singleModeData(modelLanguage);
                     }
-
 
                     @Override
                     public void multiModeData(ArrayList<ModelLanguage> languageArrayList) {
@@ -287,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
         arrayListChild.add(new ModelLanguage(LANG_ENGLISH, "English", "English"));
         arrayListChild.add(new ModelLanguage(LANG_HINDI, "Hindi", "हिंदी"));
         arrayListChild.add(new ModelLanguage(LANG_ARABIC, "Arabic", "عربى"));
-        arrayList.add(new ModelLanguageParent(arrayListChild, getString(R.string.jamun_pickers_string_text_setting_select_language)));
+        arrayList.add(new ModelLanguageParent(arrayListChild, getString(R.string.library_pickers_string_text_setting_select_language)));
         arrayListChild = new ArrayList<>();
         arrayListChild.add(new ModelLanguage(LANG_PUNJABI, "Punjabi", "ਪੰਜਾਬੀ"));
         arrayListChild.add(new ModelLanguage(LANG_BENGALI, "Bengali", "বাঙালি"));

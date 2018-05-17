@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base" >
+    <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowBackground">@color/libraryColorWhite</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+
+    <style name="AppBarTheme" parent="AppBarTheme.parent" />
+
+    <style name="AppBarTheme.parent" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/libraryColorPrimary</item>
+        <item name="android:textColorSecondary">@color/libraryColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+</resources>

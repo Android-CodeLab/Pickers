@@ -5,7 +5,7 @@
     android:id="@+id/id_coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ActivityCalendar">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -42,6 +42,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:text="Calendar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,59 +62,18 @@
                     android:layout_height="60dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:onClick="onClickPicker"
-                    android:text="Pickers" />
+                    android:onClick="onClickSingle"
+                    android:text="Single Date Picker" />
 
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:onClick="onClickCamerAndGallery"
-                    android:text="Camera and Gallery" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:onClick="onClickScanner"
-                    android:text="Scanner" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:onClick="onClickCalendar"
-                    android:text="Calendar" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_margin="8dp"
-                    android:layout_weight="1"
-                    android:onClick="onClickUIComponent"
-                    android:text="UI Component" />
+                    android:onClick="onClickMulti"
+                    android:text="Multi Date Picker" />
 
             </LinearLayout>
         </LinearLayout>
-
     </android.support.v4.widget.NestedScrollView>
-
 </android.support.design.widget.CoordinatorLayout>

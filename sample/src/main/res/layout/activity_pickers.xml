@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ActivityPickers">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/id_coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/id_collapsing_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:titleEnabled="false"
+                tools:ignore="UnusedAttribute">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/id_app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:fitsSystemWindows="true"
+                    android:minHeight="@dimen/dimen_app_bar_height"
+                    android:theme="@style/AppBarTheme" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:text="Pickers"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickIntent"
+                        android:text="Intent Picker" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickShare"
+                        android:text="Share Picker" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:text="Country"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickCountry"
+                        android:text="Country Picker" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickCountryNavigation"
+                        android:text="Country Picker Navigation" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickCountryActivity"
+                        android:text="Country Picker Activity" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickCountryDialog"
+                        android:text="Country Picker Dialog" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:text="Language"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickLanguage"
+                        android:text="Language Picker" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickLanguageNavigation"
+                        android:text="Language Picker Navigation" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickLanguageActivity"
+                        android:text="Language Picker Activity" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="onClickLanguageDialog"
+                        android:text="Language Picker Dialog" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <fragment
+        android:id="@+id/id_navigation"
+        android:name="tk.jamun.ui.pickers.views.country.PickerCountryNavigation"
+        android:layout_width="@dimen/dimen_nav_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:layout="@layout/library_country_bottom"
+        tools:layout="@layout/library_country_bottom" />
+
+    <fragment
+        android:id="@+id/id_navigation_language"
+        android:name="tk.jamun.ui.pickers.views.language.PickerLanguageNavigation"
+        android:layout_width="@dimen/dimen_nav_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/library_language"
+        tools:layout="@layout/library_language" />
+
+</android.support.v4.widget.DrawerLayout>

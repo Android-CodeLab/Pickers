@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">sample</string>
+    <string name="app_name">Sample</string>
     <string name="string_button_name_camera">Camera</string>
+    <string name="string_button_name_gallery">Gallery</string>
+    <string name="string_button_name_manager">Manager</string>
     <string name="string_button_name_remove">Remove</string>
+    <string name="string_activity_name_select">Mulit Date Picker</string>
+    <string name="string_activity_name_select_from_date">Single Date Picker</string>
+    <string name="string_message_alert">Message of Dialog Box</string>
+    <string name="string_button_name_no">No</string>
+    <string name="string_button_name_yes_want">Yes I want TO</string>
+    <string name="library_pickers_string_text_setting_select_language">Selected Language</string>
 </resources>

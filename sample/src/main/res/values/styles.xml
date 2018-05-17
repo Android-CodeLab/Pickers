@@ -1,6 +1,5 @@
 <resources>
 
-
     <style name="AppTheme" parent="AppTheme.Base" />
     <!-- Base application theme. -->
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
@@ -8,9 +7,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimaryDark</item>
-        <item name="android:windowBackground">@android:color/white</item>
-        <item name="actionMenuTextColor">@android:color/white</item>
-        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:windowBackground">@color/libraryColorWhite</item>
+        <item name="actionMenuTextColor">@color/libraryColorWhite</item>
+        <item name="android:actionMenuTextColor">@color/libraryColorWhite</item>
         <item name="android:actionMenuTextAppearance">
             @android:style/TextAppearance.Holo.Widget.ActionBar.Menu
         </item>
@@ -19,8 +18,8 @@
     <style name="AppBarTheme" parent="AppBarTheme.parent" />
 
     <style name="AppBarTheme.parent" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:textColorPrimary">@color/jamunPickersColorPrimary</item>
-        <item name="android:textColorSecondary">@color/jamunPickersColorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
         <item name="android:layout_gravity">right</item>
