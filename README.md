@@ -18,30 +18,47 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 * Country and Language Pickers have four modes you can optout from these Four mode (i.e. Bottom Sheet, Dialog, Activity, Navigation View)
 * All the views in the library are Screen compatible i.e. You can execute this library on different android screens including tabs.
 
+### Quality Measures? for (0.0.1)
+
+The following apps are using this library without facing any kind of Bugs.
+
+* **[SimplyBlood](https://play.google.com/store/apps/details?id=com.simplyblood)**
+* **[ZINI](https://play.google.com/store/apps/details?id=ai.zini)**,
+* **[USEonRENT](https://play.google.com/store/apps/details?id=ai.zini)** 
+* **[Jumboo](https://play.google.com/store/apps/details?id=ai.jumboo)**
+* **[USEonRENT](https://play.google.com/store/apps/details?id=com.useonrent)**
+* **[QR/Barcode Scanner](https://play.google.com/store/apps/details?id=ai.scanners)** 
+* **[Wall-E](https://play.google.com/store/apps/details?id=ai.hdwallpapers)**
+* **[SaveBloodIndia](https://play.google.com/store/apps/details?id=com.savebloodindia)**
+* **[Rectangle India](https://play.google.com/store/apps/details?id=com.rectangleindia.blooddonation)**
+* **[Jeevan Rakshak](https://play.google.com/store/apps/details?id=com.jeevanrakshak)**
+
+# Why this library?
+
+* This library Pickers competible with all screen sizes and device (Tab with 7' inches and 10'inches).
+* Library support both orientation that is portrait and landscape.
+* It uses DatePickerDialog & TimePickerDialog internally.
+* Its simple and easy to use.
+* Its Customizable (Support Custom Themes). 
+* Minimum API is 15, but it'll probably work in API 9 and above, just make sure you test it out (we use `Support Fragment Manager`).  
+
 ### All-in-One Setup
 
 The easiest way to add **Pickers** library to your project is by adding it as a dependency to your `build.gradle`. To add picker library you just need to append few lines into your `build.gradle`.
 These lines are provided in Integration Part given Below
 
-#### Gradle Configuration
+### Gradle Configuration
 
-Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
-
-```java
-allprojects {
-  repositories {
-        jcenter()
-  }
-}
-```
-Step 2\. Add the dependency
+**Add the dependency**
 
 ```java
 dependencies {
         compile 'tk.jamun:pickers:0.0.1'
 }
 ```
-#### Maven
+
+## Maven Config
+
 ```xml
 <dependency>
   <groupId>tk.jamun</groupId>
@@ -574,16 +591,6 @@ object..setSelectionModeMulti(true);
 
 ------
 
-# Why this library?
-
-* This library Pickers competible with all screen sizes and device (Tab with 7' inches and 10'inches).
-* Library support both orientation that is portrait and landscape.
-* It uses DatePickerDialog & TimePickerDialog internally.
-* Its simple and easy to use.
-* Its Customizable (Support Custom Themes). 
-* Minimum API is 15, but it'll probably work in API 9 and above, just make sure you test it out (we use `Support Fragment Manager`).  
-
-
 # Dependency
 
 * Android Support Fragment Library ``v27.1.1``
@@ -598,16 +605,6 @@ Content Writer : **[Achal Garg](https://www.linkedin.com/in/techgarg/)**
  (**[Linkedin](https://www.linkedin.com/in/techachal/)** & **[Website](https://achal.techcruzers.com)**) 
 
 Company : **[Techcruzers](https://www.techcruzers.com)**
-
-# Live Project using this Library
-
-The following apps are using this library without facing any kind of Bugs.
-
-* **[SimplyBlood](https://play.google.com/store/apps/details?id=com.simplyblood)**
-* **[ZINI](https://play.google.com/store/apps/details?id=ai.zini)**
-* **[SaveBloodIndia](https://play.google.com/store/apps/details?id=com.savebloodindia)**
-* **[Rectangle India](https://play.google.com/store/apps/details?id=com.rectangleindia.blooddonation)**
-* **[Jeevan Rakshak](https://play.google.com/store/apps/details?id=com.jeevanrakshak)**
 
 ## More Library under Jamun 
 * **[Volley](https://github.com/Lib-Jamun/Volley.git)**
