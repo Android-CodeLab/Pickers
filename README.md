@@ -23,7 +23,7 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 The easiest way to add **Pickers** library to your project is by adding it as a dependency to your `build.gradle`. To add picker library you just need to append few lines into your `build.gradle`.
 These lines are provided in Integration Part given Below
 
-#### Gradle Setup
+#### Gradle Configuration
 
 Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
 
