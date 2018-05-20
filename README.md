@@ -57,7 +57,7 @@ dependencies {
 }
 ```
 
-## Maven Config
+### Maven Config
 
 ```xml
 <dependency>
