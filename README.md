@@ -1,4 +1,5 @@
 # Jamun-Pickers
+<a href='https://bintray.com/lib-jamun/Jamun/Pickers/0.0.1/link'><img src='https://api.bintray.com/packages/lib-jamun/Jamun/Pickers/images/download.svg?version=0.0.1'></a>
 
 Pickers Library provide you a set of different Pickers like Country, Language, Share and Intent Chooser. 
 
