@@ -24,7 +24,6 @@ The following apps are using this library without facing any kind of Bugs.
 
 * **[SimplyBlood](https://play.google.com/store/apps/details?id=com.simplyblood)**
 * **[ZINI](https://play.google.com/store/apps/details?id=ai.zini)**,
-* **[USEonRENT](https://play.google.com/store/apps/details?id=ai.zini)** 
 * **[Jumboo](https://play.google.com/store/apps/details?id=ai.jumboo)**
 * **[USEonRENT](https://play.google.com/store/apps/details?id=com.useonrent)**
 * **[QR/Barcode Scanner](https://play.google.com/store/apps/details?id=ai.scanners)** 
@@ -32,6 +31,7 @@ The following apps are using this library without facing any kind of Bugs.
 * **[SaveBloodIndia](https://play.google.com/store/apps/details?id=com.savebloodindia)**
 * **[Rectangle India](https://play.google.com/store/apps/details?id=com.rectangleindia.blooddonation)**
 * **[Jeevan Rakshak](https://play.google.com/store/apps/details?id=com.jeevanrakshak)**
+* **[QuizHacker](https://play.google.com/store/apps/details?id=in.quiz.hacker)**
 
 # Why this library?
 
