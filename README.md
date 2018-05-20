@@ -37,7 +37,6 @@ The following apps are using this library without facing any kind of Bugs.
 
 * This library Pickers competible with all screen sizes and device (Tab with 7' inches and 10'inches).
 * Library support both orientation that is portrait and landscape.
-* It uses DatePickerDialog & TimePickerDialog internally.
 * Its simple and easy to use.
 * Its Customizable (Support Custom Themes). 
 * Minimum API is 15, but it'll probably work in API 9 and above, just make sure you test it out (we use `Support Fragment Manager`).  
@@ -83,13 +82,13 @@ It consist of Intent and Share dialog Picker. Both Modules are enough smart to P
 
 Intent Picker | Share Picker
 ---- | ----
-![jamun_pickers_intent](https://user-images.githubusercontent.com/38988514/39989090-ab29beae-5786-11e8-9121-40c387032a1a.png) | ![jamun_pickers_share](https://user-images.githubusercontent.com/38988514/39989077-a83e147e-5786-11e8-9c08-3652393d1830.png)
+![jamun_pickers_intent](https://user-images.githubusercontent.com/38988514/40280828-794d08f6-5c76-11e8-8217-2cf48acca1e7.png) | ![jamun_pickers_share](https://user-images.githubusercontent.com/38988514/40280819-74b00884-5c76-11e8-9fff-a47f28ac0a0e.png)
 
 **Landscape Mode Layout**
 
 Intent Picker | Share Picker
 ---- | ----
-![jamun_pickers_intent_landscape](https://user-images.githubusercontent.com/38988514/39989091-ab6f28ea-5786-11e8-9ba4-66745bd4b7cb.png) | ![jamun_pickers_share_landscape](https://user-images.githubusercontent.com/38988514/39989079-a87d1480-5786-11e8-816d-db3e8d2d0789.png)
+![jamun_pickers_intent_landscape](https://user-images.githubusercontent.com/38988514/40280829-7a4ea50c-5c76-11e8-9655-0c3900b404c4.png) | ![jamun_pickers_share_landscape](https://user-images.githubusercontent.com/38988514/40280820-75784722-5c76-11e8-8553-129b7d359264.png)
 
 ## Country-Pickers
 
@@ -128,13 +127,11 @@ dependencies {
 
 Bottom Sheet View | Navigation View
 ---- | ----
-![jamun_pickers_country_bottom](https://user-images.githubusercontent.com/38988514/39989083-a9390884-5786-11e8-8aa3-c0108ed2546a.png) | ![jamun_pickers_country_nav](https://user-images.githubusercontent.com/38988514/39989089-aae485aa-5786-11e8-88d8-a6d5f9b32bc1.png)
-
-**Landscape Mode Layout**
+![jamun_pickers_country_bottom](https://user-images.githubusercontent.com/38988514/40280822-767b522c-5c76-11e8-956a-56320998538d.png) | ![jamun_pickers_country_nav](https://user-images.githubusercontent.com/38988514/40280827-78d7afe8-5c76-11e8-9eec-8f2490bb12fd.png)
 
 Activity View | Dialog View
 ---- | ----
-![jamun_pickers_country_activity](https://user-images.githubusercontent.com/38988514/39989082-a8fa7164-5786-11e8-8d01-7f4b27b9f112.png) | ![jamun_pickers_country_dialog](https://user-images.githubusercontent.com/38988514/39989084-aa14f27c-5786-11e8-8c26-07fb9ffa5c26.png)
+![jamun_pickers_country_activity](https://user-images.githubusercontent.com/38988514/40280821-7609f28a-5c76-11e8-9106-431d4036877c.png) | ![jamun_pickers_country_dialog](https://user-images.githubusercontent.com/38988514/40280823-772addc8-5c76-11e8-856c-7b121a27214e.png)
 
 ## Language-Pickers
 
@@ -172,17 +169,23 @@ dependencies {
 
 Bottom Sheet View | Navigation View
 ---- | ----
-![jamun_pickers_language_bottom](https://user-images.githubusercontent.com/38988514/39989094-acf88de6-5786-11e8-82d7-9b8c2a8f257c.png) | ![jamun_pickers_language_navigation](https://user-images.githubusercontent.com/38988514/39989075-a7b637d4-5786-11e8-8bca-7d3535369218.png)
+![jamun_pickers_language_bottom](https://user-images.githubusercontent.com/38988514/40280831-7b417d5e-5c76-11e8-90e8-8223f23c6c26.png) | ![jamun_pickers_language_navigation](https://user-images.githubusercontent.com/38988514/40280818-7438401a-5c76-11e8-91e6-04f662c5aac0.png)
 
 Activity View | Dialog View
 ---- | ----
-![jamun_pickers_language_activity](https://user-images.githubusercontent.com/38988514/39989092-ac444a48-5786-11e8-93f4-4016d9d3676b.png) | ![jamun_pickers_language_dialog](https://user-images.githubusercontent.com/38988514/39989096-ad6d1404-5786-11e8-9a2d-12f7b30806ff.png)
+![jamun_pickers_language_activity](https://user-images.githubusercontent.com/38988514/40280830-7ac219ce-5c76-11e8-8687-d9ae468d30ee.png) | ![jamun_pickers_language_dialog](https://user-images.githubusercontent.com/38988514/40280832-7bae9e48-5c76-11e8-8652-199b1cffb582.png)
 
 ## Landscape Mode
 
 Country-Picker | Language Picker
 ---- | ----
-![jamun_pickers_country_landscape](https://user-images.githubusercontent.com/38988514/39989086-aa686dc6-5786-11e8-98ad-d3a86f209ad0.png) | ![jamun_pickers_language_landscape](https://user-images.githubusercontent.com/38988514/39989099-ade8d256-5786-11e8-87c0-1f322b53f303.png)
+![jamun_pickers_country_landscape](https://user-images.githubusercontent.com/38988514/40280824-779c6ad8-5c76-11e8-982b-88c1ac482069.png) | ![jamun_pickers_language_landscape](https://user-images.githubusercontent.com/38988514/40280833-7c2e0552-5c76-11e8-868c-9f7a632606d9.png)
+
+## Multi Selection Mode
+
+Country-Picker | Language Picker
+---- | ----
+![jamun_pickers_country_multi_selection](https://user-images.githubusercontent.com/38988514/40280826-7869cb54-5c76-11e8-92f0-196bc6233055.png) | ![jamun_pickers_language_multi_selection](https://user-images.githubusercontent.com/38988514/40280817-73c8ff16-5c76-11e8-8a2e-7e2bdd92c772.png)
 
 ------
 
