@@ -10,7 +10,7 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 
 4. `Share Dialog Picker` provide you Intent Chooser with great UI/UX. It automatically retrive the sort list of all the apps which can share the file. This functionality saves much of your task. You can also share dialog Picker for sending Large files. For this you just need to call a single function with file as Argument.
 
-### What's New? (0.0.1)
+### What's New? (0.0.2)
 * Stable official Version for Rapid Development.
 * Custom UI components with Single and Multi Selection Mode in Country and Language Pickers.
 * Easy Calling mechanism with instant reply via Listeners
@@ -18,7 +18,7 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 * Country and Language Pickers have four modes you can optout from these Four mode (i.e. Bottom Sheet, Dialog, Activity, Navigation View)
 * All the views in the library are Screen compatible i.e. You can execute this library on different android screens including tabs.
 
-### Quality Measures? for (0.0.1)
+### Quality Measures? for (0.0.2)
 
 The following apps are using this library without facing any kind of Bugs.
 
@@ -52,7 +52,7 @@ These lines are provided in Integration Part given Below
 
 ```java
 dependencies {
-        compile 'tk.jamun:pickers:0.0.1'
+        compile 'tk.jamun.ui:pickers:0.0.2'
 }
 ```
 
@@ -60,9 +60,9 @@ dependencies {
 
 ```xml
 <dependency>
-  <groupId>tk.jamun</groupId>
+  <groupId>tk.jamun.ui</groupId>
   <artifactId>pickers</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>aar</type>
 </dependency>
 ```
@@ -77,6 +77,34 @@ It consist of Intent and Share dialog Picker. Both Modules are enough smart to P
 `Intent Picker` helps you to use Custom Intent Chooser with great UI/UX, and there are many of the feature for the customization of already embedded features. So that you can use it easily and gracefully.
 
 `Share Dialog Picker` provide you Intent Chooser with great UI/UX. It automatically retrive the sort list of all the apps which can share the file. This functionality saves much of your task. You can also share dialog Picker for sending Large files. For this you just need to call a single function with file as Argument.
+
+#### Gradle Setup
+
+Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
+
+```java
+allprojects {
+  repositories {
+        mavenCentral()
+  }
+}
+```
+Step 2\. Add the dependency
+
+```java
+dependencies {
+        compile 'tk.jamun.ui:share:0.0.2'
+}
+```
+#### Maven
+```xml
+<dependency>
+  <groupId>tk.jamun.ui</groupId>
+  <artifactId>share</artifactId>
+  <version>0.0.2</version>
+  <type>aar</type>
+</dependency>
+```
 
 **Portrait Mode Layout**
 
@@ -101,8 +129,7 @@ Step 1\. Add the jCenter repository to your build file. Add it in your root buil
 ```java
 allprojects {
   repositories {
-        jcenter()
-        
+        mavenCentral()
   }
 }
 ```
@@ -110,15 +137,15 @@ Step 2\. Add the dependency
 
 ```java
 dependencies {
-        compile 'tk.jamun:country:0.0.1'
+        compile 'tk.jamun.ui:country:0.0.2'
 }
 ```
 #### Maven
 ```xml
 <dependency>
-  <groupId>tk.jamun</groupId>
+  <groupId>tk.jamun.ui</groupId>
   <artifactId>country</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>aar</type>
 </dependency>
 ```
@@ -144,7 +171,7 @@ Step 1\. Add the jCenter repository to your build file. Add it in your root buil
 ```java
 allprojects {
   repositories {
-        jcenter()
+        mavenCentral()
   }
 }
 ```
@@ -152,15 +179,16 @@ Step 2\. Add the dependency
 
 ```java
 dependencies {
-        compile 'tk.jamun:language:0.0.1'
+        compile 'tk.jamun.ui:language:0.0.2'
 }
 ```
 #### Maven
+
 ```xml
 <dependency>
-  <groupId>tk.jamun</groupId>
+  <groupId>tk.jamun.ui</groupId>
   <artifactId>language</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>aar</type>
 </dependency>
 ```
@@ -196,11 +224,14 @@ Once the project has been added to gradle, You can use these lines of code to co
 ## 1. Share Picker
 
 **1. Define Class Object**
+
 ```
 PickerShareFiles pickerShareFiles = new PickerShareFiles();
 pickerShareFiles.setThings(activity);
 ```
+
 **2. Call on Click**
+
 ```
 pickerShareFiles.shareThings(getSupportFragmentManager(), "Description", "Title");
 ```
@@ -210,6 +241,7 @@ pickerShareFiles.shareThings(getSupportFragmentManager(), "Description", "Title"
 ## 2. Intent Picker
 
 **1. Define Class Object**
+
 ```
 ArrayList<ModelIntentPicker> arrayList = new ArrayList<>();
 
@@ -220,11 +252,15 @@ arrayList.add(new ModelIntentPicker(PickerIntent.PICKER_REMOVE, getString(R.stri
 PickerIntent intentPicker = new PickerIntent();
 intentPicker.setThings(activity).setPicker("Title of the Intent Picker", arrayList);
 ```
+
 **2. Call on Click**
+
 ```
 intentPicker.showPicker(getSupportFragmentManager());
 ```
+
 **3. onBackPressed or Destroy**
+
 ```
 intentPicker.clear();
 ```
@@ -238,17 +274,18 @@ intentPicker.clear();
 This implement your picker as an Bottom Sheet view.
 
 **1. Define Class Object**
+
 ```
 PickerCountryBottom pickerCountryBottom = new PickerCountryBottom().setThings(this)
                 .bindListener(new PickerListenerCountry() {
                     @Override
-            public void singleModeData(ModelDialog modelDialog) {
-                super.singleModeData(modelDialog);
+            public void singleModeData(ModelCountry modelCountry) {
+                super.singleModeData(modelCountry);
                        //Return single selection mode data as an model
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+            public void multiModeData(ArrayList<ModelCountry> countryArrayList) {
                 super.multiModeData(countryArrayList);
                 //Return Multi selection mode data as an arraylist.
                     }
@@ -259,10 +296,12 @@ PickerCountryBottom pickerCountryBottom = new PickerCountryBottom().setThings(th
                 });
         pickerCountryBottom.setSelectionModeMulti(false);
 ```
+
 **2. Call on Click**
 ```
 pickerCountryBottom.showPicker(getSupportFragmentManager());
 ```
+
 **3. onBackPressed or Destroy**
 ```
 pickerCountryBottom.clear();
@@ -280,13 +319,13 @@ This implement your picker as an Navigation Drawer view.
         navLeftFragment.setTags(initializeDataCountryTags());
         navLeftFragment.setUpDrawer(drawerLayout, toolbar, false, new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelDialog) {
-                super.singleModeData(modelDialog);
+            public void singleModeData(ModelCountry modelCountry) {
+                super.singleModeData(modelCountry);
                        //Return single selection mode data as an model
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+            public void multiModeData(ArrayList<ModelCountry> countryArrayList) {
                 super.multiModeData(countryArrayList);
                 //Return Multi selection mode data as an arraylist.
             }
@@ -325,13 +364,13 @@ This implement your picker as an Dialog view.
 ```
 PickerCountryDialog  pickerCountryDialog = new PickerCountryDialog(this).bindListener(new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelDialog) {
-                super.singleModeData(modelDialog);
+            public void singleModeData(ModelCountry modelCountry) {
+                super.singleModeData(modelCountry);
                        //Return single selection mode data as an model
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+            public void multiModeData(ArrayList<ModelCountry> countryArrayList) {
                 super.multiModeData(countryArrayList);
                 //Return Multi selection mode data as an arraylist.
             }
@@ -358,13 +397,13 @@ This implement your picker as an Activity view.
 ```
 PickerCountryActivity.setThings(this, new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelDialog) {
-                super.singleModeData(modelDialog);
+            public void singleModeData(ModelCountry modelCountry) {
+                super.singleModeData(modelCountry);
                        //Return single selection mode data as an model
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> countryArrayList) {
+            public void multiModeData(ArrayList<ModelCountry> countryArrayList) {
                 super.multiModeData(countryArrayList);
                 //Return Multi selection mode data as an arraylist.
             }
