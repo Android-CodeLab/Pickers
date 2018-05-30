@@ -22,12 +22,13 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'tk.jamun:ui:0.0.1'
-    implementation 'tk.jamun:scanner:0.0.1'
-    //    implementation 'tk.jamun:calendar:0.0.1'
-//    implementation 'tk.jamun:pickers:0.0.1'
-//    implementation 'tk.jamun:gallery:0.0.1'
-//    implementation 'tk.jamun:country:0.0.1'
-//    implementation 'tk.jamun:language:0.0.1'
-//    implementation 'tk.jamun:volley:0.0.1'
+    implementation 'tk.jamun.ui:ui:0.0.1'
+    implementation 'tk.jamun.ui:scanner:0.0.1'
+//    implementation 'tk.jamun.ui:calendar:0.0.1'
+//    implementation 'tk.jamun.ui:gallery:0.0.1'
+//    implementation 'tk.jamun.ui:pickers:0.0.2'
+//    implementation 'tk.jamun.ui:country:0.0.2'
+//    implementation 'tk.jamun.ui:share:0.0.2'
+//    implementation 'tk.jamun.ui:language:0.0.2'
+//    implementation 'tk.jamun.ui:volley:0.0.2'
 }

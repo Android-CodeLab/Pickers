@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import tk.jamun.ui.pickers.extras.PickerListenerCountry;
 import tk.jamun.ui.pickers.extras.PickerListenerLanguage;
 import tk.jamun.ui.pickers.models.ModelCountryDetails;
-import tk.jamun.ui.pickers.models.ModelDialog;
+import tk.jamun.ui.pickers.models.ModelCountry;
 import tk.jamun.ui.pickers.models.ModelIntentPicker;
 import tk.jamun.ui.pickers.models.ModelLanguage;
 import tk.jamun.ui.pickers.models.ModelLanguageParent;
@@ -111,12 +111,12 @@ public class ActivityPickers extends AppCompatActivity {
         pickerCountryBottom = new PickerCountryBottom().setThings(this)
                 .bindListener(new PickerListenerCountry() {
                     @Override
-                    public void singleModeData(ModelDialog modelLanguage) {
+                    public void singleModeData(ModelCountry modelLanguage) {
                         super.singleModeData(modelLanguage);
                     }
 
                     @Override
-                    public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
+                    public void multiModeData(ArrayList<ModelCountry> languageArrayList) {
                         super.multiModeData(languageArrayList);
                     }
 
@@ -130,12 +130,12 @@ public class ActivityPickers extends AppCompatActivity {
     private void initializeCountryDialog() {
         pickerCountryDialog = new PickerCountryDialog(this).bindListener(new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelLanguage) {
+            public void singleModeData(ModelCountry modelLanguage) {
                 super.singleModeData(modelLanguage);
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
+            public void multiModeData(ArrayList<ModelCountry> languageArrayList) {
                 super.multiModeData(languageArrayList);
             }
 
@@ -177,12 +177,12 @@ public class ActivityPickers extends AppCompatActivity {
         navLeftFragment.setTags(initializeDataCountryTags());
         navLeftFragment.setUpDrawer(drawerLayout, toolbar, false, new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelLanguage) {
+            public void singleModeData(ModelCountry modelLanguage) {
                 super.singleModeData(modelLanguage);
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
+            public void multiModeData(ArrayList<ModelCountry> languageArrayList) {
                 super.multiModeData(languageArrayList);
             }
 
@@ -201,7 +201,12 @@ public class ActivityPickers extends AppCompatActivity {
                     library_background_intent_five, 0));
             intentPicker = new PickerIntent();
             intentPicker.setThings(this)
-                    .setPicker("Choose Intent Picker", arrayList);
+                    .setPicker("Choose Intent Picker", arrayList, new PickerIntent.OnClickListener() {
+                        @Override
+                        public void onClick(ModelIntentPicker modelIntentPicker) {
+
+                        }
+                    });
         }
         intentPicker.showPicker(getSupportFragmentManager());
     }
@@ -227,12 +232,12 @@ public class ActivityPickers extends AppCompatActivity {
         initializeDataCountryTags();
         PickerCountryActivity.setThings(this, new PickerListenerCountry() {
             @Override
-            public void singleModeData(ModelDialog modelLanguage) {
+            public void singleModeData(ModelCountry modelLanguage) {
                 super.singleModeData(modelLanguage);
             }
 
             @Override
-            public void multiModeData(ArrayList<ModelDialog> languageArrayList) {
+            public void multiModeData(ArrayList<ModelCountry> languageArrayList) {
                 super.multiModeData(languageArrayList);
             }
 
