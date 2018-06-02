@@ -10,7 +10,7 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 
 4. `Share Dialog Picker` provide you Intent Chooser with great UI/UX. It automatically retrive the sort list of all the apps which can share the file. This functionality saves much of your task. You can also share dialog Picker for sending Large files. For this you just need to call a single function with file as Argument.
 
-### What's New? (0.0.2)
+### What's New? (0.0.1)
 * Stable official Version for Rapid Development.
 * Custom UI components with Single and Multi Selection Mode in Country and Language Pickers.
 * Easy Calling mechanism with instant reply via Listeners
@@ -18,7 +18,7 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 * Country and Language Pickers have four modes you can optout from these Four mode (i.e. Bottom Sheet, Dialog, Activity, Navigation View)
 * All the views in the library are Screen compatible i.e. You can execute this library on different android screens including tabs.
 
-### Quality Measures? for (0.0.2)
+### Quality Measures? for (0.0.1)
 
 The following apps are using this library without facing any kind of Bugs.
 
@@ -50,9 +50,19 @@ These lines are provided in Integration Part given Below
 
 **Add the dependency**
 
+Step 1\. Add the jCenter repository to your build file. Add it in your root build.gradle at the end of repositories:
+
+```java
+allprojects {
+  repositories {
+        mavenCentral()
+  }
+}
+```
+Step 2\. Add the dependency
 ```java
 dependencies {
-        compile 'tk.jamun.ui:pickers:0.0.2'
+        compile 'tk.jamun.ui:pickers:0.0.1'
 }
 ```
 
@@ -62,7 +72,7 @@ dependencies {
 <dependency>
   <groupId>tk.jamun.ui</groupId>
   <artifactId>pickers</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.1</version>
   <type>aar</type>
 </dependency>
 ```
@@ -93,7 +103,7 @@ Step 2\. Add the dependency
 
 ```java
 dependencies {
-        compile 'tk.jamun.ui:share:0.0.2'
+        compile 'tk.jamun.ui:share:0.0.1'
 }
 ```
 #### Maven
@@ -101,7 +111,7 @@ dependencies {
 <dependency>
   <groupId>tk.jamun.ui</groupId>
   <artifactId>share</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.1</version>
   <type>aar</type>
 </dependency>
 ```
@@ -137,7 +147,7 @@ Step 2\. Add the dependency
 
 ```java
 dependencies {
-        compile 'tk.jamun.ui:country:0.0.2'
+        compile 'tk.jamun.ui:country:0.0.1'
 }
 ```
 #### Maven
@@ -145,7 +155,7 @@ dependencies {
 <dependency>
   <groupId>tk.jamun.ui</groupId>
   <artifactId>country</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.1</version>
   <type>aar</type>
 </dependency>
 ```
@@ -179,7 +189,7 @@ Step 2\. Add the dependency
 
 ```java
 dependencies {
-        compile 'tk.jamun.ui:language:0.0.2'
+        compile 'tk.jamun.ui:language:0.0.1'
 }
 ```
 #### Maven
@@ -188,7 +198,7 @@ dependencies {
 <dependency>
   <groupId>tk.jamun.ui</groupId>
   <artifactId>language</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.1</version>
   <type>aar</type>
 </dependency>
 ```
