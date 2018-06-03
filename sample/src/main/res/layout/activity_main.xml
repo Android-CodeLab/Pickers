@@ -7,41 +7,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/id_collapsing_app_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:titleEnabled="false"
-            tools:ignore="UnusedAttribute">
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/id_app_bar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:fitsSystemWindows="true"
-                android:minHeight="@dimen/dimen_app_bar_height"
-                android:theme="@style/AppBarTheme" />
-
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
-
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/library_dimen_common_margin"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <tk.jamun.elements.circularimageview.CircularImageView
+                    android:id="@+id/id_circle_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:library_border_color="@color/colorPrimaryDark"
+                    app:library_border_width="2dp"
+                    app:srcCompat="@drawable/image_vd_user_default" />
+
+                <tk.jamun.elements.circularnetworkimageview.CircularNetworkImageView
+                    android:id="@+id/id_circle_network_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/library_dimen_common_margin"
+                    android:layout_marginStart="@dimen/library_dimen_common_margin"
+                    app:library_border_color="@color/colorPrimaryDark"
+                    app:library_border_width="2dp"
+                    app:srcCompat="@drawable/image_vd_user_default" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
