@@ -651,7 +651,7 @@ object..setSelectionModeMulti(true);
 ## Credits
 
 Desgin & Developed by : **[Jatin Sahgal](https://www.linkedin.com/in/jatinsahgal/)**
- (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](https://jatin.techcruzers.com)**) 
+ (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](https://blog.jamun.tk)**) 
 
 ## More Library under Jamun 
 * **[Volley](https://github.com/Lib-Jamun/Volley.git)**
