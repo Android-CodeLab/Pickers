@@ -653,11 +653,6 @@ object..setSelectionModeMulti(true);
 Desgin & Developed by : **[Jatin Sahgal](https://www.linkedin.com/in/jatinsahgal/)**
  (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](https://jatin.techcruzers.com)**) 
 
-Content Writer : **[Achal Garg](https://www.linkedin.com/in/techgarg/)**
- (**[Linkedin](https://www.linkedin.com/in/techachal/)** & **[Website](https://achal.techcruzers.com)**) 
-
-Company : **[Techcruzers](https://www.techcruzers.com)**
-
 ## More Library under Jamun 
 * **[Volley](https://github.com/Lib-Jamun/Volley.git)**
 Library is a set of Custom Classes with UI components for network programming, integration and transaction handling in a better and standard way. This will help developers for making quality use of volley library. 
