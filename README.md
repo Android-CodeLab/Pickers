@@ -667,13 +667,13 @@ is a collection of Beautiful Activities which help others to make there Fully Cu
 library provide you Custom Complete Camera view with full features like Flash, Rotation, Gallery Picker, Focus, Tap to capture, Confirmation window and last but not least croping feature. It also provide you file path in return so that developer can feel a friendly handy way to Deal After. 
 
 * **[Gallery](https://github.com/Lib-Jamun/Gallery.git)**
-have some Beautiful UI Components and Multi files Mode for android Developers to give there app a A Rich look With single and Multi picker Functionality.
+Library have splendid UI Components with Single and Multi files Selection Mode for android Developers to give there app a A Rich look With with custom picker functionality to cover up maximum media type like Audio, Files (Docs, Text etc) and Images.
 
 * **[UI](https://github.com/Lib-Jamun/ui.git)**
 library is a set of UI Views, Custom Component and Collection of Helper Classes which help Developer for making quality Product. Such as Camera, Gallery, Number of Pickers, Calendar, Date Pickers, Dialogs and many more Heler UI and Backend Component.
 
 * **[Elements](https://github.com/Lib-Jamun/elements.git)**
-Library provide you a custom set of Android Elements that have custom views and properties like CircularImageView or CircularNetworkImageView.
+Library provide you a custom set of Android Elements that have custom views and properties like CircularImageView or CircularNetworkImageView and many more.
 
 ## License
     Copyright (c) 2018 Jatin Sahgal
