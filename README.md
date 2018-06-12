@@ -654,6 +654,7 @@ Desgin & Developed by : **[Jatin Sahgal](https://www.linkedin.com/in/jatinsahgal
  (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](https://blog.jamun.tk)**) 
 
 ## More Library under Jamun 
+
 * **[Volley](https://github.com/Lib-Jamun/Volley.git)**
 Library is a set of Custom Classes with UI components for network programming, integration and transaction handling in a better and standard way. This will help developers for making quality use of volley library. 
 
@@ -670,6 +671,9 @@ have some Beautiful UI Components and Multi files Mode for android Developers to
 
 * **[UI](https://github.com/Lib-Jamun/ui.git)**
 library is a set of UI Views, Custom Component and Collection of Helper Classes which help Developer for making quality Product. Such as Camera, Gallery, Number of Pickers, Calendar, Date Pickers, Dialogs and many more Heler UI and Backend Component.
+
+* **[Elements](https://github.com/Lib-Jamun/elements.git)**
+Library provide you a custom set of Android Elements that have custom views and properties like CircularImageView or CircularNetworkImageView.
 
 ## License
     Copyright (c) 2018 Jatin Sahgal
