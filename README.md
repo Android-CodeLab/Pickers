@@ -10,7 +10,7 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 
 4. `Share Dialog Picker` provide you Intent Chooser with great UI/UX. It automatically retrive the sort list of all the apps which can share the file. This functionality saves much of your task. You can also share dialog Picker for sending Large files. For this you just need to call a single function with file as Argument.
 
-### What's New? (0.0.1)
+### What's New? {Latest Version}
 * Stable official Version for Rapid Development.
 * Custom UI components with Single and Multi Selection Mode in Country and Language Pickers.
 * Easy Calling mechanism with instant reply via Listeners
@@ -18,21 +18,22 @@ Pickers Library provide you a set of different Pickers like Country, Language, S
 * Country and Language Pickers have four modes you can optout from these Four mode (i.e. Bottom Sheet, Dialog, Activity, Navigation View)
 * All the views in the library are Screen compatible i.e. You can execute this library on different android screens including tabs.
 
-### Quality Measures? for (0.0.1)
+### Quality Measures? for {Latest Version}
 
 The following apps are using this library without facing any kind of Bugs.
 
 * **[SimplyBlood](https://play.google.com/store/apps/details?id=com.simplyblood)**
 * **[ZINI](https://play.google.com/store/apps/details?id=ai.zini)**,
-* **[Jumboo](https://play.google.com/store/apps/details?id=ai.jumboo)**
-* **[USEonRENT](https://play.google.com/store/apps/details?id=com.useonrent)**
-* **[QR/Barcode Scanner](https://play.google.com/store/apps/details?id=ai.scanners)** 
-* **[Wall-E](https://play.google.com/store/apps/details?id=ai.hdwallpapers)**
-* **[SaveBloodIndia](https://play.google.com/store/apps/details?id=com.savebloodindia)**
-* **[Rectangle India](https://play.google.com/store/apps/details?id=com.rectangleindia.blooddonation)**
-* **[Jeevan Rakshak](https://play.google.com/store/apps/details?id=com.jeevanrakshak)**
-* **[QuizHacker](https://play.google.com/store/apps/details?id=in.quiz.hacker)**
+* **[RentalBazar](https://play.google.com/store/apps/details?id=com.rentalbazaar)** 
+* **[DoubtCrusher](https://play.google.com/store/apps/details?id=com.doubtcrusher)**
+* **[BookAGround](https://play.google.com/store/apps/details?id=com.bookaground)**
+* **[PeyFree](https://play.google.com/store/apps/details?id=com.peyfree)**
+* **[ClueRace](https://play.google.com/store/apps/details?id=com.cluerace)**
+* **[CIS-Connect In Single](https://play.google.com/store/apps/details?id=com.connectinsingle)**
+* **[QR/Barcode Scanner](https://play.google.com/store/apps/details?id=com.scanner.android)** 
+* **[Wall-E](https://play.google.com/store/apps/details?id=com.walle.android)**
 
+------
 # Why this library?
 
 * This library Pickers competible with all screen sizes and device (Tab with 7' inches and 10'inches).
@@ -60,19 +61,38 @@ allprojects {
 }
 ```
 Step 2\. Add the dependency
-```java
+```
+Latest Version : 0.0.8
+
+Android
 dependencies {
-        compile 'tk.jamun.ui:pickers:0.0.1'
+     compile 'tk.jamun.ui:pickers:{Latest Version}'
 }
+
+AndroidX
+dependencies {
+     compile 'tk.jamunx.ui:pickers:{Latest Version}'
+}
+
+Kotlin
+dependencies {
+     compile 'tk.jamun-ktx.ui:pickers:{Latest Version}'
+}
+
 ```
 
 ### Maven Config
 
 ```xml
 <dependency>
+Android
   <groupId>tk.jamun.ui</groupId>
+AndroidX
+  <groupId>tk.jamunx.ui</groupId>
+Kotlin
+  <groupId>tk.jamun-ktx.ui</groupId>
   <artifactId>pickers</artifactId>
-  <version>0.0.1</version>
+  <version>{Latest Version}</version>
   <type>aar</type>
 </dependency>
 ```
@@ -101,17 +121,35 @@ allprojects {
 ```
 Step 2\. Add the dependency
 
-```java
+```
+Android
 dependencies {
-        compile 'tk.jamun.ui:share:0.0.1'
+     compile 'tk.jamun.ui:intent:{Latest Version}'
+}
+
+AndroidX
+dependencies {
+     compile 'tk.jamunx.ui:intent:{Latest Version}'
+}
+
+Kotlin
+dependencies {
+     compile 'tk.jamun-ktx.ui:intent:{Latest Version}'
 }
 ```
+
 #### Maven
 ```xml
 <dependency>
+Android
   <groupId>tk.jamun.ui</groupId>
+AndroidX
+  <groupId>tk.jamunx.ui</groupId>
+Kotlin
+  <groupId>tk.jamun-ktx.ui</groupId>
+  <artifactId>pickers</artifactId>
+  <version>{Latest Version}</version>
   <artifactId>share</artifactId>
-  <version>0.0.1</version>
   <type>aar</type>
 </dependency>
 ```
@@ -145,17 +183,35 @@ allprojects {
 ```
 Step 2\. Add the dependency
 
-```java
+```
+Android
 dependencies {
-        compile 'tk.jamun.ui:country:0.0.1'
+     compile 'tk.jamun.ui:country:{Latest Version}'
 }
+
+AndroidX
+dependencies {
+     compile 'tk.jamunx.ui:country:{Latest Version}'
+}
+
+Kotlin
+dependencies {
+     compile 'tk.jamun-ktx.ui:country:{Latest Version}'
+}
+
 ```
 #### Maven
 ```xml
 <dependency>
+Android
   <groupId>tk.jamun.ui</groupId>
+AndroidX
+  <groupId>tk.jamunx.ui</groupId>
+Kotlin
+  <groupId>tk.jamun-ktx.ui</groupId>
+  <artifactId>pickers</artifactId>
+  <version>{Latest Version}</version>
   <artifactId>country</artifactId>
-  <version>0.0.1</version>
   <type>aar</type>
 </dependency>
 ```
@@ -187,9 +243,20 @@ allprojects {
 ```
 Step 2\. Add the dependency
 
-```java
+```
+Android
 dependencies {
-        compile 'tk.jamun.ui:language:0.0.1'
+     compile 'tk.jamun.ui:language:{Latest Version}'
+}
+
+AndroidX
+dependencies {
+     compile 'tk.jamunx.ui:language:{Latest Version}'
+}
+
+Kotlin
+dependencies {
+     compile 'tk.jamun-ktx.ui:language:{Latest Version}'
 }
 ```
 #### Maven
@@ -645,13 +712,14 @@ object..setSelectionModeMulti(true);
 
 # Dependency
 
-* Android Support Fragment Library ``v27.1.1``
+* Android Appcompact and Support Fragment Library ``{Latest Version}``
 * Jamun Volley Library **[Volley](https://github.com/Lib-Jamun/Volley.git)**
+* Android Design Library ``{Latest Version}``
 
 ## Credits
 
 Desgin & Developed by : **[Jatin Sahgal](https://www.linkedin.com/in/jatinsahgal/)**
- (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](https://blog.jamun.tk)**) 
+ (**[Linkedin](https://www.linkedin.com/in/jatinsahgal/)** & **[Website](http://androidcodelab.com/)** & **[Github](https://github.com/Lib-Jamun)**) 
 
 ## More Library under Jamun 
 
